@@ -1,7 +1,7 @@
 {
-  "name": "twinsi-christmas-2025",
+  "name": "twinsi-christmas",
   "version": "1.0.0",
-  "description": "Twinsi Christmas 2025 – HTML/CSS/JS responsive calendar with Playwright tests",
+  "description": "Twinsi Christmas – HTML/CSS/JS responsive calendar with Playwright tests",
   "main": "index.js",
   "scripts": {
     "test": "npm run test:calendar && npm run test:gifts && npm run test:visuals && npm run test:game",
@@ -23,7 +23,7 @@
   "animation",
   "game"
 ],
-  "author": "Vanja VTwin90 (https://github.com/VTwin90)",
+  "author": "Vanja (https://github.com/vanjatorp)",
   "license": "MIT",
   "devDependencies": {
     "playwright": "^1.56.1"
