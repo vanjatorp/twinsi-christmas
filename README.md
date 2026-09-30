@@ -8,8 +8,7 @@
 
 <br>
 
-<h1 align="center">🎄 Twinsi Christmas 2025 
-Advent Calendar Website</h1>
+<h1 align="center">🎄 Twinsi Christmas Advent Calendar Website</h1>
 
 <p align="center">
 A festive, interactive calendar built with vanilla JavaScript, HTML, and CSS — featuring 24 boxes, one for each day in December leading up to Christmas.
