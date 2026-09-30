@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/CSS-3-blue" />
   <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" />
   <img src="https://img.shields.io/badge/Responsive-Design-green" />
-  <img src="https://github.com/VTwin90/twinsi-christmas-2025/actions/workflows/test.yml/badge.svg" alt="CI Status" />
+  <img src="https://github.com/vanjatorp/twinsi-christmas/actions/workflows/test.yml/badge.svg" alt="CI Status" />
 </p>
 
 <br>
@@ -24,17 +24,17 @@ A festive, interactive calendar built with vanilla JavaScript, HTML, and CSS —
 </p>
 
 <p align="center">
-  <a href="https://vanjatorp.github.io/twinsi-christmas-2025/">
+  <a href="https://vanjatorp.github.io/twinsi-christmas/">
     <img src="https://img.shields.io/badge/🎄 Live Demo -gold?style=for-the-badge" alt="Live Demo" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/vanjatorp/twinsi-christmas-2025/fork">
-    <img src="https://img.shields.io/github/forks/vanjatorp/twinsi-christmas-2025?style=social" alt="Fork this repo" />
+  <a href="https://github.com/vanjatorp/twinsi-christmas/fork">
+    <img src="https://img.shields.io/github/forks/vanjatorp/twinsi-christmas?style=social" alt="Fork this repo" />
   </a>
-  <a href="https://github.com/vanjatorp/twinsi-christmas-2025/stargazers">
-    <img src="https://img.shields.io/github/stars/vanjatorp/twinsi-christmas-2025?style=social" alt="GitHub stars" />
+  <a href="https://github.com/vanjatorp/twinsi-christmas/stargazers">
+    <img src="https://img.shields.io/github/stars/vanjatorp/twinsi-christmas?style=social" alt="GitHub stars" />
   </a>
   <br>
   <em>If you like this project, give it a star ⭐!</em>
