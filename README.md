@@ -105,7 +105,7 @@ export const gifts = [
 
 I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the favicon set and [their checker](https://realfavicongenerator.net/favicon-checker) to validate it.
 
- > ⚠️ The favicon checker may report missing icons (e.g. `192x192`, `512x512`) when hosted on GitHub Pages due to subpath hosting (`/twinsi-christmas-2025/`). These are false negatives — all icons are correctly linked and verified via Chrome DevTools and direct access.
+ > ⚠️ The favicon checker may report missing icons (e.g. `192x192`, `512x512`) when hosted on GitHub Pages due to subpath hosting (`/twinsi-christmas/`). These are false negatives — all icons are correctly linked and verified via Chrome DevTools and direct access.
 
 <br>
 
@@ -115,8 +115,8 @@ I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the
 To run locally:
 
 ```bash
-git clone https://github.com/vanjatorp/twinsi-christmas-2025.git
-cd twinsi-christmas-2025
+git clone https://github.com/vanjatorp/twinsi-christmas.git
+cd twinsi-christmas
 open index.html
 
 # macOS
@@ -180,7 +180,7 @@ Creative content (e.g. music, videos, poems, cards) is not covered by this licen
 <br>
 
 <p align="center">
-  <a href="https://vanjatorp.github.io/twinsi-christmas-2025/">
+  <a href="https://vanjatorp.github.io/twinsi-christmas/">
     <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-gold" alt="Made with Love" />
   </a>
 </p>
