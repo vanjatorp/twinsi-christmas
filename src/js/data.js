@@ -41,7 +41,7 @@ export const snowflakes = [
 
 export const gifts = [
   { type: 'music', url: 'https://open.spotify.com/playlist/38NJHtg1gq9NDjAc81QiXH' }, // Dec 1
-  { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2025.png' }, // Dec 2
+  { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2026.png' }, // Dec 2
   { type: 'card', url: 'assets/gifts/twinsi_christmas_card.png' }, // Dec 3
   { type: 'compliment-challenge', text: 'Give someone a heartfelt compliment today — something that makes them feel truly seen.' }, // Dec 4
   { type: 'baristalysvideo', url: 'https://youtu.be/nc3UBeg13fg' }, // Dec 5
