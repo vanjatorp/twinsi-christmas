@@ -176,15 +176,20 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
 
-      case 'tarot1':
+      case 'card2':
         content = `
           <div class="gift-box-content">
+            <video controls playsinline preload="metadata" style="width:100%; max-height:70vh;">
+              <source src="${gift.url}" type="video/mp4" />
+              Your browser does not support video playback.
+            </video>
             <p>
-              🐾 Twinsi Bear has invited Annette to draw the cards today.  
-              Let’s see what they reveal…
+              🐾 Twinsi Bear is wishing you a Merry Christmas —  
+              may it be full of laughter, love, and twinkling lights. 
+              Share this card with someone who makes your heart smile. 
             </p>
             <p>
-              ✨ <a href="${gift.url}" target="_blank" class="calendar-link">Watch the Reading</a>
+              ✨<a href="${gift.url}" download>Download Your Christmas Card Video</a>
             </p>
           </div>
         `;
@@ -305,15 +310,28 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;       
 
-      case 'tarot2':
+      case 'blackwoodmystery-game':
+        const blackwoodIntro = `
+          <p class="blackwood-game-intro">
+            🐾 Twinsi Bear has something with a little mystery for you today —  
+            A theft. A locked manor. Five potential suspects. One truth.
+            Your decisions shape the investigation..
+          </p>
+        `;
+
         content = `
-          <div class="gift-box-content">
-            <p>
-              🐾 Twinsi Bear has invited Annette to draw the cards today.  
-              Let’s see what they reveal…
-            </p>
-            <p>
-              ✨ <a href="${gift.url}" target="_blank" class="calendar-link">Watch the Reading</a>
+          <div class="gift-box-content blackwood-game-content">
+            ${blackwoodIntro}
+            <iframe
+              src="${gift.embedUrl}"
+              title="The Blackwood Mystery Demo on itch.io"
+              width="1040"
+              height="780"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+            <p class="blackwood-game-link">
+              <a href="${gift.url}" class="calendar-link" target="_blank" rel="noopener noreferrer">🎮 Play on itch.io</a>
             </p>
           </div>
         `;
@@ -474,6 +492,7 @@ export function createBox(day, now, currentYear, confettiCanvas) {
     requestAnimationFrame(() => {
       modal.classList.remove('hidden');
       modalContent.classList.remove('animate');
+      modalContent.classList.toggle('blackwood-game-modal', gift.type === 'blackwoodmystery-game');
       modal.querySelector('.gift-title').textContent = `🎁 Day ${day}`;
       modal.querySelector('.gift-content').innerHTML = content;
       modalContent.classList.add('animate');

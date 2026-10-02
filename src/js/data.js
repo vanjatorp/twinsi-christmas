@@ -47,14 +47,18 @@ export const gifts = [
   { type: 'baristalysvideo', url: 'https://youtu.be/nc3UBeg13fg' }, // Dec 5
   { type: 'poem1', url: 'assets/gifts/the-spirit-of-christmas-poem.png' },  // Dec 6
   { type: 'christmas-game', url: 'https://vanjatorp.github.io/twinsi-cookie-catch/' }, // Dec 7 
-  { type: 'tarot1', url: 'https://youtu.be/dz6H6huZb9w' },  // Dec 8
+  { type: 'card2', url: 'assets/gifts/twinsi_christmas_card2.mp4' },  // Dec 8
   { type: 'card-challenge', text: 'Send a Christmas card to someone who wouldn’t expect it.' },  // Dec 9
   { type: 'poem2', url: 'assets/gifts/light-in-the-dark-poem.png' },  // Dec 10
   { type: 'encouragement1', text: '' },  // Dec 11
   { type: 'unperfectdate-game', url: 'https://vanjatorp.github.io/UN-PERFECT-DATE/' },  // Dec 12 
   { type: 'drawing-challenge', text: '' },  // Dec 13
   { type: 'poem3', url: 'assets/gifts/christmas- reflections-poem.png' },  // Dec 14
-  { type: 'tarot2', url: 'https://youtu.be/Bm1N6_uJ7Ys' },  // Dec 15
+  {
+    type: 'blackwoodmystery-game',
+    url: 'https://theinnerworldstudio.itch.io/the-blackwood-mystery-demo',
+    embedUrl: 'https://itch.io/embed-upload/17815830?color=111118',
+  }, // Dec 15
   { type: 'encouragement2', text: '' },  // Dec 16
   { type: 'takeawalk-challenge', text: '' },  // Dec 17
   { type: 'magikerenogmånenvideo', url: 'https://youtu.be/5p37EXWx2hY' }, // Dec 18
