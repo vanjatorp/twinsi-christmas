@@ -176,15 +176,20 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
 
-      case 'tarot1':
+      case 'card2':
         content = `
           <div class="gift-box-content">
+            <video controls playsinline preload="metadata" style="width:100%; max-height:70vh;">
+              <source src="${gift.url}" type="video/mp4" />
+              Your browser does not support video playback.
+            </video>
             <p>
-              🐾 Twinsi Bear has invited Annette to draw the cards today.  
-              Let’s see what they reveal…
+              🐾 Twinsi Bear is wishing you a Merry Christmas —  
+              may it be full of laughter, love, and twinkling lights. 
+              Share this card with someone who makes your heart smile. 
             </p>
             <p>
-              ✨ <a href="${gift.url}" target="_blank" class="calendar-link">Watch the Reading</a>
+              ✨<a href="${gift.url}" download>Download Your Christmas Card Video</a>
             </p>
           </div>
         `;
@@ -305,15 +310,28 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;       
 
-      case 'tarot2':
+      case 'blackwoodmystery-game':
+        const blackwoodIntro = `
+          <p class="blackwood-game-intro">
+            🐾 Twinsi Bear has something with a little mystery for you today —  
+            A theft. A locked manor. Five potential suspects. One truth.
+            Your decisions shape the investigation..
+          </p>
+        `;
+
         content = `
-          <div class="gift-box-content">
-            <p>
-              🐾 Twinsi Bear has invited Annette to draw the cards today.  
-              Let’s see what they reveal…
-            </p>
-            <p>
-              ✨ <a href="${gift.url}" target="_blank" class="calendar-link">Watch the Reading</a>
+          <div class="gift-box-content blackwood-game-content">
+            ${blackwoodIntro}
+            <iframe
+              src="${gift.embedUrl}"
+              title="The Blackwood Mystery Demo on itch.io"
+              width="1040"
+              height="780"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+            <p class="blackwood-game-link">
+              <a href="${gift.url}" class="calendar-link" target="_blank" rel="noopener noreferrer">🎮 Play on itch.io</a>
             </p>
           </div>
         `;
@@ -417,19 +435,31 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
 
-      case 'tarot3':
+      case 'christmastilematch-game':
+        const blackwoodIntro = `
+          <p class="blackwood-game-intro">
+            🐾 Twinsi Bear has something with some christmas cheer for you today —  
+            A tile match game!
+          </p>
+        `;
+
         content = `
-          <div class="gift-box-content">
-            <p>
-              🐾 Twinsi Bear has invited Annette to draw the cards today.  
-              Let’s see what they reveal…
-            </p>
-            <p>
-              ✨ <a href="${gift.url}" target="_blank" class="calendar-link">Watch the Reading</a>
+          <div class="gift-box-content blackwood-game-content">
+            ${blackwoodIntro}
+            <iframe
+              src="${gift.embedUrl}"
+              title="The Twinsi Christmas Tile Match Game on itch.io"
+              width="1040"
+              height="780"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+            <p class="blackwood-game-link">
+              <a href="${gift.url}" class="calendar-link" target="_blank" rel="noopener noreferrer">🎮 Play on itch.io</a>
             </p>
           </div>
         `;
-        break;   
+        break;  
 
       case 'ottherlyvideo':
         content = `
@@ -448,14 +478,13 @@ export function createBox(day, now, currentYear, confettiCanvas) {
           <p>🐾 Twinsi Bear’s Final Gift:</p>
           <p>
             Today, something special is waiting for you —  
-            <strong>Bear & Rabbit: A Fable About Healing and Boundaries</strong>  
+            <strong>Hugo: the Blame-Game and the Quiet Truth Within</strong>  
             is free on <strong>Kindle</strong> from 12:00am PST (Oslo time 21:00) today and until December 28th 11:59 PST.
           </p>
           <p>
-            This is a heart-led fable about emotional healing, relational repair, and the power of boundaries.  
-            It placed <strong>4th in the Hay House writing competition 2025</strong>.
+            Hugo is a gentle, thought-provoking fable about blame and responsibility, self-abandonment and belonging, boundaries and accountability, and the quiet journey back to yourself.
           </p>
-          <img src="https://m.media-amazon.com/images/I/71-afjTgIJL._SL1500_.jpg" alt="Bear & Rabbit book cover" style="width:40%; max-width:400px;" />
+          <img src="https://m.media-amazon.com/images/I/81GP0IAMVPL._SL1500_.jpg" alt="Hugo The Blame Game book cover" style="width:40%; max-width:400px;" />
           <p>
             ✨ <a href="${gift.url}" target="_blank" class="calendar-link">Open the Gift</a>
           </p>
@@ -474,6 +503,7 @@ export function createBox(day, now, currentYear, confettiCanvas) {
     requestAnimationFrame(() => {
       modal.classList.remove('hidden');
       modalContent.classList.remove('animate');
+      modalContent.classList.toggle('blackwood-game-modal', gift.type === 'blackwoodmystery-game');
       modal.querySelector('.gift-title').textContent = `🎁 Day ${day}`;
       modal.querySelector('.gift-content').innerHTML = content;
       modalContent.classList.add('animate');

@@ -41,28 +41,36 @@ export const snowflakes = [
 
 export const gifts = [
   { type: 'music', url: 'https://open.spotify.com/playlist/38NJHtg1gq9NDjAc81QiXH' }, // Dec 1
-  { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2025.png' }, // Dec 2
+  { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2026.png' }, // Dec 2
   { type: 'card', url: 'assets/gifts/twinsi_christmas_card.png' }, // Dec 3
   { type: 'compliment-challenge', text: 'Give someone a heartfelt compliment today — something that makes them feel truly seen.' }, // Dec 4
   { type: 'baristalysvideo', url: 'https://youtu.be/nc3UBeg13fg' }, // Dec 5
   { type: 'poem1', url: 'assets/gifts/the-spirit-of-christmas-poem.png' },  // Dec 6
   { type: 'christmas-game', url: 'https://vanjatorp.github.io/twinsi-cookie-catch/' }, // Dec 7 
-  { type: 'tarot1', url: 'https://youtu.be/dz6H6huZb9w' },  // Dec 8
+  { type: 'card2', url: 'assets/gifts/twinsi_christmas_card2.mp4' },  // Dec 8
   { type: 'card-challenge', text: 'Send a Christmas card to someone who wouldn’t expect it.' },  // Dec 9
   { type: 'poem2', url: 'assets/gifts/light-in-the-dark-poem.png' },  // Dec 10
   { type: 'encouragement1', text: '' },  // Dec 11
   { type: 'unperfectdate-game', url: 'https://vanjatorp.github.io/UN-PERFECT-DATE/' },  // Dec 12 
   { type: 'drawing-challenge', text: '' },  // Dec 13
   { type: 'poem3', url: 'assets/gifts/christmas- reflections-poem.png' },  // Dec 14
-  { type: 'tarot2', url: 'https://youtu.be/Bm1N6_uJ7Ys' },  // Dec 15
+  {
+    type: 'blackwoodmystery-game',
+    url: 'https://theinnerworldstudio.itch.io/the-blackwood-mystery-demo',
+    embedUrl: 'https://itch.io/embed-upload/17815830?color=111118',
+  }, // Dec 15
   { type: 'encouragement2', text: '' },  // Dec 16
   { type: 'takeawalk-challenge', text: '' },  // Dec 17
   { type: 'magikerenogmånenvideo', url: 'https://youtu.be/5p37EXWx2hY' }, // Dec 18
   { type: 'poem4', url: 'assets/gifts/sun-and-moon-poem.png' },  // Dec 19
   { type: 'encouragement3', text: '' },  // Dec 20
   { type: 'reachout-challenge', text: '' },  // Dec 21
-  { type: 'tarot3', url: 'https://youtu.be/HcHfPDCuymI' }, // Dec 22
+  {
+    type: 'christmastilematch-game',
+    url: 'https://theinnerworldstudio.itch.io/twinsi-christmas-tile-match?secret=itw1F1Y1VhGXiy3SjkMzpfFQE7A',
+    embedUrl: 'https://itch.io/embed/5402736?linkback=true&amp;bg_color=0c142d&amp;fg_color=faf7f0&amp;link_color=d8aa4f&amp;border_color=404a68',
+  }, // Dec 22
   { type: 'ottherlyvideo', url: 'https://youtu.be/zLyvomM4IlY' }, // Dec 23
-  { type: 'bookgift', url: 'https://www.amazon.com/dp/B0FLF7PN6M' }, // Dec 24
+  { type: 'bookgift', url: 'https://www.amazon.com/dp/B0HPP1WPLV/' }, // Dec 24
   // Add up to 24 gifts
-];
+]; 

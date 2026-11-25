@@ -776,6 +776,75 @@ body.low-effects .aurora-layer.secondary {
   border-image: linear-gradient(135deg, #ffd700, #f5deb3, #fff8dc, #ffecb3) 1;
 }
 
+.gift-modal-content.blackwood-game-modal {
+  box-sizing: border-box;
+  width: min(96vw, 520px);
+  max-width: none;
+  max-height: 96vh;
+  max-height: 96dvh;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.gift-box-content.blackwood-game-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+}
+
+.blackwood-game-intro {
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+}
+
+.blackwood-game-content iframe {
+  display: none;
+  width: 100%;
+  max-width: 1040px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+  border: 0;
+}
+
+.blackwood-game-link {
+  margin: 0.65rem 0 0;
+}
+
+.blackwood-game-link a {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  border: 2px solid #f5deb3;
+  border-radius: 6px;
+  background: #c62828;
+  color: #fff8dc;
+  text-decoration: none;
+}
+
+.blackwood-game-link a:hover {
+  background: #b71c1c;
+}
+
+.blackwood-game-link a:focus-visible {
+  outline: 3px solid #ffd700;
+  outline-offset: 3px;
+}
+
+@media (min-width: 1168px) and (min-height: 680px) {
+  .gift-modal-content.blackwood-game-modal {
+    width: min(96vw, 1120px);
+  }
+
+  .blackwood-game-content iframe {
+    display: block;
+  }
+
+  .blackwood-game-link {
+    display: none;
+  }
+}
+
 .gift-modal-content {
   position: relative;
 }
