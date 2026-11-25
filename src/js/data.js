@@ -68,7 +68,7 @@ export const gifts = [
   {
     type: 'christmastilematch-game',
     url: 'https://theinnerworldstudio.itch.io/twinsi-christmas-tile-match?secret=itw1F1Y1VhGXiy3SjkMzpfFQE7A',
-    embedUrl: 'https://itch.io/embed/5402736?linkback=true&amp;bg_color=0c142d&amp;fg_color=faf7f0&amp;link_color=d8aa4f&amp;border_color=404a68',
+    embedUrl: 'https://itch.io/embed-upload/20667368?color=131d3b',
   }, // Dec 22
   { type: 'ottherlyvideo', url: 'https://youtu.be/zLyvomM4IlY' }, // Dec 23
   { type: 'bookgift', url: 'https://www.amazon.com/dp/B0HPP1WPLV/' }, // Dec 24
